@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>anchor</key>
+		<dict>
+			<key>Definition</key>
+			<string>Anchoring the most massive body in a system ensures that there will be little total movement in the system.
+
+* Important:
+Only anchor bodies that concentrate most of the mass of a system.
+Using smaller bodies as anchors can cause unexpected behaviour.</string>
+			<key>Title</key>
+			<string>Anchor</string>
+		</dict>
+		<key>creating</key>
+		<dict>
+			<key>Definition</key>
+			<string>There are constructors for every planet in the solar system (plus the Sun and Moon). These come with the correct mass and radius for the planet, along with a nice texture.
+
+It is also possible to create custom bodies with the `Planet` constructor, for which you specify the radius and a surface color.
+These bodies, however, have zero mass, so they need to be specified after creating.</string>
+			<key>Title</key>
+			<string>Creating Planets</string>
+		</dict>
+		<key>speed</key>
+		<dict>
+			<key>Definition</key>
+			<string>The initial velocity for a body, perpendicular to its distance. To specify any velocity vector, the property `velocity` accepts a `Velocity(x: Speed, y: Speed)` structure.
+    
+* Callout(Tip): The basic units for speed are: `meterPerSecond`, `kmPerSecond`, `kmPerHour`.
+</string>
+			<key>Title</key>
+			<string>Initial Velocity</string>
+		</dict>
+		<key>distance</key>
+		<dict>
+			<key>Definition</key>
+			<string>This represents the distance from the center of the simulation in a straight line. It is also possible to specify any point in the 2D space by using a `Position(x: Distance, y: Distance)` structure in the `position` property.
+
+* Callout(Tip): The basic units for distances are: `meter`, `km`, `astronomicalUnit`. There are helper units for the radius and distance to the sun for every planet (e.g. `earthDistance`, `plutoDistance`, `moonRadius`).</string>
+			<key>Title</key>
+			<string>Distance</string>
+		</dict>
+		<key>mass</key>
+		<dict>
+			<key>Definition</key>
+			<string>* Callout(Tip): The only base unit for mass is `kg`. However, there are helper units equivalent to `earthMass` for every planet in the solar system (plus the moon). (e.g `saturnMass`, `solarMass`, etc)</string>
+			<key>Title</key>
+			<string>Mass</string>
+		</dict>
+		<key>scale</key>
+		<dict>
+			<key>Definition</key>
+			<string>If the planets were shown in their actual size, they would be extremely hard (or impossible) to see. That is why you can choose to either keep the planets their actual size (thus getting a better sense of scale) or make them seem larger than they actually are.
+
+* Callout(Tip): Even if the planets are too small to see, their orbit trails will always be visible!</string>
+			<key>Title</key>
+			<string>Scale</string>
+		</dict>
+		<key>simulation speed</key>
+		<dict>
+			<key>Title</key>
+			<string>Simulation Speed</string>
+			<key>Definition</key>
+			<string>This number represents the amout of time that passes in the simulation for every second in real time.
+
+Setting the simulation speed too low will cause little movement to be noticiable. On the other hand, setting too large a simulation speed may cause the bodies to move in an unpredictable manner.
+
+* Callout(Tip): You don&apos;t have to use days as your unit of time. You can use any of the following units: `second`, `hour`, `day`, `month`, `year`.</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
